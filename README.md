@@ -6,6 +6,10 @@
 [![Travis CI](https://travis-ci.com/Aloomaio/async-hvac.svg?branch=master)](https://travis-ci.com/Aloomaio/async-hvac) [![Latest Version](https://img.shields.io/pypi/v/async-hvac.svg)](https://pypi.python.org/pypi/async-hvac/)
 
 ## Getting started
+Fork of original [Async-hvac](https://github.com/Aloomaio/async-hvac), which supports Python 3.10 and aiohttp==3.8.1
+
+KVv2 backend was mentioned in this doc
+
 
 ### Installation
 
@@ -58,6 +62,19 @@ print(await client.read('secret/foo'))
 
 await client.delete('secret/foo')
 ```
+
+### Read and write to KVv2 backend
+
+```python
+#Replace 'data' to 'metadata' for for metadata operations
+await client.read('secret/data/foo')
+
+#Be careful, root key for payload MUST be 'data'
+await client.write('secret/data/foo', data={"spam":"eggs"})
+
+await client.delete('secret/data/foo')
+```
+
 
 ### Authenticate to different auth backends
 
