@@ -10,17 +10,15 @@ Fork of original [Async-hvac](https://github.com/Aloomaio/async-hvac), which sup
 
 KVv2 backend was mentioned in this doc
 
+Thanks for [Aloomaio](https://github.com/Aloomaio/) for original lib
+
 
 ### Installation
 
 ```bash
-pip install async-hvac
+pip install async-hvac-fork
 ```
-or
-```bash
-pip install async-hvac[parser]
-```
-if you would like to be able to return parsed HCL data as a Python dict for methods that support it.
+
 
 ### Initialize the client
 
