@@ -6,7 +6,7 @@
 [![Travis CI](https://travis-ci.com/Aloomaio/async-hvac.svg?branch=master)](https://travis-ci.com/Aloomaio/async-hvac) [![Latest Version](https://img.shields.io/pypi/v/async-hvac.svg)](https://pypi.python.org/pypi/async-hvac/)
 
 ## Getting started
-Fork of original [Async-hvac](https://github.com/Aloomaio/async-hvac), which supports Python 3.10 and aiohttp==3.8.3
+Fork of original [Async-hvac](https://github.com/Aloomaio/async-hvac), which supports Python 3.11 and aiohttp==3.8.3
 
 KVv2 backend was mentioned in this doc
 
